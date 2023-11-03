@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-arrow::before {
+  color: rgb(158, 158, 158) !important;
+  font-size: 24px !important;
+}
+.slick-slide {
+  padding: 20px !important;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* .slick-slide + div {
+  padding: 10px !important;
+}
+@media (max-width:) */
+.reservationdiv {
+  background: url("../public/assets/reservationbg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.ourmenudiv {
+  background: url("../public/assets/ourmenubg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.gallarydiv {
+  background: url("../public/assets/gallary-heading.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.contactUsdiv {
+  background: url("../public/assets/contactdiv.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.skeleton {
+  background: lightgray;
+}
+
+.innermenu {
+  display: none;
+  padding: 5px;
+  background-color: #5bbb4e;
+}
+.innermenuActive {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.innermenuActive p {
+  text-align: center;
+  /* text-decoration: underline; */
+}
+.i1nnermenuActive {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.i1nnermenuActive p {
+  text-align: center;
+  /* text-decoration: underline; */
+}

@@ -1,0 +1,276 @@
+.container {
+  //   border: 2px solid red;
+  background: #f9f9f9;
+
+  .priceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background: rgba(60, 69, 77, 1);
+    color: white;
+    @media (max-width: 600px) {
+      padding: 12px;
+      font-size: 15px;
+    }
+  }
+  .menuContainer {
+    // border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+    .column1 {
+      // border: 2px solid brown;
+      width: 48%;
+      // gap: 10px;
+      .menuHeading {
+        p {
+          color: #5bbb4e;
+          font-family: Proxima Nova;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+          text-align: left;
+          padding-top: 10px;
+          // border: 2px solid red;
+        }
+        h4 {
+          font-family: Libre Bodoni;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 46px;
+          letter-spacing: 0.05em;
+          text-align: left;
+          font-family: "Times New Roman", monospace;
+          // border: 2px solid pink;
+        }
+      }
+
+      .cardContainer {
+        // border: 2px solid peru;
+        .wrapper {
+          display: flex;
+          // flex-direction: column;
+
+          // align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+          .card {
+            display: flex;
+            background: #ffffff;
+            // border: 2px solid yellow;
+            padding: 5px;
+            Image {
+              padding: 2px;
+            }
+            .info {
+              // border: 2px solid green;
+              padding: 0px 20px;
+              flex: 1;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+          button {
+            width: 20%;
+            background: transparent;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      .cardContainer {
+        // border: 2px solid peru;
+        .wrapper {
+          padding: 5px;
+          display: flex;
+          position: relative;
+
+          // flex-direction: column;
+          justify-content: space-between;
+          .customSelect {
+            -webkit-appearance: none; /* Remove default arrow for WebKit browsers */
+            -moz-appearance: none; /* Remove default arrow for Firefox */
+            appearance: none; /* Remove default arrow for other modern browsers */
+            padding: 0.5rem 1rem; /* Optional: Add padding to make the select visually appealing */
+            border: 1px solid #ccc; /* Optional: Add a border for a border effect */
+            border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+            background-color: white; /* Optional: Add a background color */
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 30%;
+            right: 0;
+
+            background: transparent;
+          }
+          .card {
+            display: flex;
+            background: #ffffff;
+            // border: 2px solid yellow;
+            padding: 5px;
+            width: 80%;
+            Image {
+              padding: 2px;
+            }
+            .info {
+              // border: 2px solid green;
+              padding: 0px 20px;
+              flex: 1;
+              p {
+                padding: 0;
+                margin: 0;
+              }
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+            button {
+              width: 20%;
+              background: transparent;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    .column2 {
+      // border: 2px solid purple;
+      width: 48%;
+      .menuHeading2 {
+        p {
+          color: #5bbb4e;
+          font-family: Proxima Nova;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+          text-align: left;
+          padding-top: 10px;
+          // border: 2px solid red;
+        }
+        h4 {
+          font-family: Libre Bodoni;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 46px;
+          letter-spacing: 0.05em;
+          text-align: left;
+          font-family: "Times New Roman", monospace;
+          // border: 2px solid pink;
+        }
+      }
+
+      .cardContainer2 {
+        // border: 2px solid peru;
+        .wrapper2 {
+          padding: 5px;
+          display: flex;
+          // position: relative;
+
+          // flex-direction: column;
+          justify-content: space-between;
+          .customSelect {
+            -webkit-appearance: none; /* Remove default arrow for WebKit browsers */
+            -moz-appearance: none; /* Remove default arrow for Firefox */
+            appearance: none; /* Remove default arrow for other modern browsers */
+            padding: 0.5rem 1rem; /* Optional: Add padding to make the select visually appealing */
+            border: 1px solid #ccc; /* Optional: Add a border for a border effect */
+            border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+            background-color: white; /* Optional: Add a background color */
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 30%;
+            right: 0;
+
+            background: transparent;
+          }
+          .card2 {
+            display: flex;
+            background: #ffffff;
+            // border: 2px solid yellow;
+            padding: 5px;
+            width: 60%;
+            Image {
+              padding: 2px;
+            }
+            .info2 {
+              // border: 2px solid green;
+              padding: 0px 20px;
+              flex: 1;
+              p {
+                padding: 0;
+                margin: 0;
+              }
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+          button {
+            width: 20%;
+            background: transparent;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    .menuContainer {
+      display: flex;
+      flex-direction: column;
+      .column1 {
+        width: 100%;
+      }
+      .column2 {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    .menuContainer {
+      padding: 30px 10px;
+      .column1 {
+        // border: 2px solid red;
+
+        .menuHeading {
+          p {
+            text-align: center;
+          }
+          h4 {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+      .column2 {
+        // border: 2px solid red;
+
+        .menuHeading2 {
+          p {
+            text-align: center;
+          }
+          h4 {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

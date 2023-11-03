@@ -1,0 +1,136 @@
+$gray: rgba(60, 69, 77, 1);
+
+.bgcontainer {
+  // border: 2px solid pink;
+  height: 440px;
+  .container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 0.5;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    margin: 0px;
+    // border: 2px solid blue;
+
+    h2 {
+      padding-top: 40px;
+      font: Proxima Nova;
+    }
+  }
+  .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    // background: linear-gradient(rgba(42, 38, 81, 0.5), rgba(42, 38, 81, 0.5)),
+    // url(../../public/assets/ReservationImg.png);
+    background: url(../../public/assets/ReservationImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(30%);
+    background-position: bottom;
+  }
+
+  .form {
+    width: 60%;
+    background: rgba(206, 235, 202, 1);
+    margin: auto;
+    min-height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 500px;
+      // max-height: 200px;
+      // border: 2px solid red;
+      gap: 7px;
+      .upper {
+        // border: 2px solid blue;
+        display: flex;
+        // flex-wrap: wrap;
+        width: 100%;
+
+        gap: 5px;
+        .upper1 {
+          // border: 2px solid brown;
+          min-width: 50%;
+        }
+        .upper2 {
+          // border: 2px solid yellow;
+          min-width: 50%;
+        }
+      }
+      .lower {
+        // border: 2px solid green;
+        display: flex;
+        gap: 4px;
+        width: 100%;
+        .lower1 {
+          // border: 2px solid pink;
+          min-width: 33%;
+        }
+        .lower2 {
+          // border: 2px solid pink;
+          min-width: 33%;
+        }
+        .lower3 {
+          // border: 2px solid pink;
+          min-width: 33%;
+        }
+      }
+    }
+
+    .btn {
+      background-color: $gray;
+    }
+  }
+  .input {
+    width: 100%;
+    border: transparent;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bgcontainer {
+    height: auto;
+
+    .container {
+      height: auto;
+      padding: 20px;
+      .form {
+        margin-top: 2px;
+        width: 80%;
+        border-radius: 20px;
+        .inputContainer {
+          padding: 5px;
+          gap: 4px;
+          .upper {
+            flex-direction: column;
+            // gap: 0px;
+            gap: 4px;
+          }
+          .lower {
+            flex-direction: column;
+            gap: 4px;
+          }
+        }
+      }
+    }
+  }
+}
