@@ -155,8 +155,8 @@ const MenuPage = () => {
                   </selectmenu> */}
                   </div>
                   <div id={`i1nnermenucontrol${index}`} className="innermenu">
-                    {d.fields.foodoptions?.map((e) => {
-                      return <p>{e}</p>;
+                    {d.fields.foodoptions?.map((e, index) => {
+                      return <p key={index}>{e}</p>;
                     })}
                   </div>
                 </>
